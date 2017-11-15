@@ -13,9 +13,9 @@ public class AnimationArena {
         mBall = new Ball(mWidth, mHeight);
     }
 
-    public void update() {
+    public void update(int velocityX, int velocityY) {
         // Move the ball
-        mBall.move();
+        mBall.move(velocityX, velocityY);
     }
 
     public void draw(Canvas canvas) {

@@ -26,7 +26,10 @@ public class Ball {
         mPaint.setColor(BALL_COLOR);
     }
 
-    public void move() {
+    public void move(int velocityX, int velocityY) {
+
+        mVelocityX += velocityX;
+        mVelocityY += velocityY;
 
         // Move ball
         mX += mVelocityX;

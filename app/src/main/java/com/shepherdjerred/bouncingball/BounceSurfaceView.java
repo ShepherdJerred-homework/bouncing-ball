@@ -18,7 +18,7 @@ public class BounceSurfaceView extends SurfaceView implements SurfaceHolder.Call
 
     @Override
     public void surfaceCreated(SurfaceHolder surfaceHolder) {
-        mBounceThread = new BounceThread(surfaceHolder);
+        mBounceThread = new BounceThread(getContext(), surfaceHolder);
         mBounceThread.start();
     }
 
